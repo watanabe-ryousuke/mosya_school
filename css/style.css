@@ -1,0 +1,330 @@
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+  width: 100%;
+}
+
+.header-logo {
+  display: flex;
+  position: fixed;
+  top: 40px;
+  left: 40px;
+}
+
+.header-menu {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header-buttom {
+  display: flex;
+}
+
+.header-buttom1 {
+  width: 90px;
+  height: 90px;
+  background-color: #b49ae0;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.header-buttom1 img {
+  width: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-buttom1 a {
+  width: 90px;
+  height: 90px;
+  color: #fff;
+  text-decoration: none;
+  flex-direction: column;
+  text-align: center; 
+  font-size: 0.9em;
+}
+
+.header-buttom1 p {
+  line-height: 1.2em;
+  margin-bottom: 5px;
+  position: relative;
+  bottom: 3px;
+}
+
+.header-buttom2 {
+  width: 90px;
+  height: 90px;
+  background-color: #458ddf;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.header-buttom2 img {
+  width: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-buttom2 a {
+  width: 90px;
+  height: 90px;
+  color: #fff;
+  text-decoration: none;
+  flex-direction: column;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.header-buttom2 p {
+  line-height: 1.2em;
+  margin-bottom: 5px;
+  position: relative;
+  bottom: 3px;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  background-color: white;
+}
+
+.bar-span {
+  border: solid red;
+  width: 30%;
+}
+
+.bar-span::before {
+  border: solid red;
+  width: 30%;
+}
+
+.bar-span::after {
+  border: solid red;
+  width: 30%;
+}
+
+/* /header */
+
+/* mv */
+
+.mv-container {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  margin-bottom: 5.5rem;
+}
+
+.mv-container img {
+  padding: 20px;
+  width: 100vw;
+  border-radius: 10px;
+}
+
+.copy {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  color: white;
+}
+
+.copy h1 {
+  font-size: 4.5rem;
+}
+
+.copy p {
+  font-size: 1.2em;
+}
+
+/* /mv */
+
+.bosyu-2024 {
+  width: 67%;
+  margin: 0 auto 5rem auto;
+  text-align: center;
+  color: #1e90ff;
+  border: 1px solid #1e90ff;
+  border-radius: 10px;
+  padding: 20px 0;
+}
+
+.bosyu-2024 h4 {
+  font-size: 1.3em;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.bosyu-2024 p {
+  margin-bottom: 5px;
+}
+
+/* pickup */
+
+.pickup {
+  position: relative;
+  display: flex;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pickup-bg {
+  display: flex;
+  padding-top: 50px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+
+.pickup-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.pickup-bg::before {
+  content: '';
+  background-color: gray;
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.pickup-contents {
+  display: flex;
+  margin-left: 30px;
+}
+
+.pickup-content {
+  /* width: 10rem; */
+  margin-right: 20px;
+}
+
+.pickup-content a {
+  display: block;
+}
+
+.pickup-content img {
+  width: 28rem;
+  height: 16rem;
+  object-fit: cover;
+}
+
+.pickup-content p {
+  color: white;
+  margin-top: 0.5em;
+  font-size: 1rem;
+}
+
+/* /pickup */
+
+/* features */
+
+.features {
+  margin: 0 30px;
+  padding: 0 40px;
+  
+}
+
+.features-border {
+  margin-top: 100px;
+  font-size: 0.9em;
+}
+
+.features-border span {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.features-border::before {
+  border: solid black;
+}
+
+.features-title {
+  margin-top: 38px;
+  font-size: 3rem;
+  line-height: 1.7em;
+}
+
+.features-contents {
+  margin-top: 50px;
+  display: flex;
+  position: relative;
+}
+
+.features-content {
+  margin-right: 40px;
+}
+
+.content-heads {
+  max-height: 375px;
+
+}
+
+.content-heads img {
+  width: 35rem;
+  height: 22rem;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.content-head {
+  width: 70%;
+  position: relative;
+  bottom: 50px;
+  display: flex;
+  right: 9px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.content-head h3 {
+  padding: 20px 0 20px 0;
+  font-size: 1.4rem;
+  position: relative;
+  left: 15px;
+}
+
+.head-span {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  position: relative;
+  top: 18px;
+}
+
+.content-body {
+  position: relative;
+  left: 30px;
+}
+
+/* /features */
+
+/* topics */
+
+/* /topics */
