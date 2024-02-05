@@ -140,6 +140,7 @@ section {
   padding: 20px;
   width: 100vw;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .copy {
