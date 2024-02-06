@@ -256,15 +256,22 @@ section {
 .features-border {
   margin-top: 100px;
   font-size: 0.9em;
+  display: flex;
+  align-items: center;
 }
 
 .features-border span {
-  width: 90%;
-  margin: 0 auto;
+  background-color: white;
 }
 
 .features-border::before {
-  border: solid black;
+  content: '';
+  display: block;
+  border-bottom: 1px solid black;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: -1;
 }
 
 .features-title {
