@@ -110,19 +110,39 @@ section {
   background-color: white;
 }
 
+.hamburger p {
+  position: relative;
+  font-size: 1.2rem;
+  top: 15px;
+}
+
+.bar {
+  width: 100%;
+}
+
+.bar-span,
+.bar-span::before,
+.bar-span::after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid red;
+  width: 30px;
+  height: 2px;
+  margin: 0 auto;
+}
+
 .bar-span {
-  border: solid red;
-  width: 30%;
+  position: relative;
 }
 
 .bar-span::before {
-  border: solid red;
-  width: 30%;
+  position: absolute;
+  bottom: 7px;
 }
 
 .bar-span::after {
-  border: solid red;
-  width: 30%;
+  position: absolute;
+  top: 9px;
 }
 
 /* /header */
