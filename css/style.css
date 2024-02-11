@@ -931,12 +931,14 @@ a {
   padding: 10px 0;
   font-weight: bold;
   font-size: 0.9em;
+  position: relative;
 }
 
 .open-campus-buttom1 img, .open-campus-buttom2 img {
   width: 15px;
-  position: relative;
-  left: 0;
+  position: absolute;
+  top: 50%;
+  right: 1em;
 }
 
 .open-campus-buttom1 {
