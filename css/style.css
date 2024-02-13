@@ -1,5 +1,5 @@
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .container {
@@ -17,6 +17,7 @@ ol, ul {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 /* header */
@@ -223,16 +224,34 @@ a {
 .pickup {
   position: relative;
   display: flex;
-  width: 88%;
+  /* width: 88%; */
   margin-left: auto;
   margin-right: auto;
 }
 
-.pickup-bg {
+/* .pickup-bg {
   display: flex;
   padding-top: 50px;
   padding-left: 40px;
   padding-bottom: 40px;
+} */
+
+.pickup-bg {
+  margin-left: 5rem;
+  display: flex;
+  padding-top: 50px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  content: '';
+  background-color: gray;
+  color: black;
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  z-index: -1;
+  border-radius: 10px 0 0 10px;
 }
 
 .pickup-text {
@@ -242,7 +261,7 @@ a {
   font-size: 0.8em;
 }
 
-.pickup-bg::before {
+/* .pickup-bg::before {
   content: '';
   background-color: gray;
   color: black;
@@ -253,7 +272,7 @@ a {
   width: 100vw;
   z-index: -1;
   border-radius: 10px;
-}
+} */
 
 .pickup-contents {
   display: flex;
@@ -616,7 +635,7 @@ a {
 }
 
 .course-img {
-  margin-right: calc(50% - 50vw);
+  margin-right: calc(50% - 49vw);
 }
 
 .course-img img {
@@ -625,7 +644,7 @@ a {
   height: 480px;
   object-fit: cover;
   position: relative;
-  right: 0;
+  right: 7px;
   border-radius: 10px 0 0 10px;
 }
 
@@ -939,6 +958,7 @@ a {
   position: absolute;
   top: 50%;
   right: 1em;
+  transform: translateY(-50%);
 }
 
 .open-campus-buttom1 {
@@ -953,6 +973,7 @@ a {
 }
 
 .open-campus-buttom-area {
+  margin: 0 auto;
   display: block;
   width: 309px;
   height: 58px;
@@ -993,4 +1014,236 @@ a {
   right: 0;
 }
 
+.open-campus-banner {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 150px;
+}
+
+.open-campus-banner div a img {
+  width: 30rem;
+  height: 9rem;
+  margin: 0 20px;
+  object-fit: cover;
+}
+
 /* /open-campus */
+
+/* campus-life */
+
+.campus-life {
+  margin: 0 30px;
+  padding: 0 40px;
+}
+
+.campus-life-border {
+  width: 100%;
+  margin-top: 285px;
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+}
+
+.campus-life-title {
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-top: 30px;
+  font-size: 3.1rem;
+  letter-spacing: 0.1em;
+}
+
+.campus-life-container {
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: calc(2.44898vw + 20.81633px);
+}
+
+.campus-life-img img {
+  width: 33.5rem;
+  height: 39rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.campus-life-link, .campus-life-head {
+  width: 100%;
+}
+
+.campus-life-head a ul li {
+  display: flex;
+  position: relative;
+  padding: 28px 0;
+  border-top: 1px solid gray;
+}
+
+.campus-life-head a ul li:nth-child(4) {
+  border-bottom: 1px solid gray;
+}
+
+.campus-life-head a ul li p {
+  margin-left: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.campus-life-head a ul li img {
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  transform: translateY(-50%);
+}
+
+.campus-life-buttom-area {
+  display: block;
+  width: 309px;
+  height: 58px;
+}
+
+.campus-life-buttom {
+  margin-top: 55px;
+  width: 309px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-weight: 600;
+}
+
+.campus-life-buttom img {
+  width: 20px;
+}
+
+.campus-life-buttom::before {
+  content: '';
+  width: 10px;
+  height: 100%;
+  border: 1px solid black;
+  border-right: 1px solid white;
+  position: absolute;
+  left: 0;
+}
+
+.campus-life-buttom::after {
+  content: '';
+  width: 10px;
+  height: 100%;
+  border: 1px solid black;
+  border-left: 1px solid white;
+  position: absolute;
+  right: 0;
+}
+
+/* /campus-life */
+
+/* admissions */
+
+.admissions {
+  margin: 0 30px;
+  padding: 0 40px;
+}
+
+.admissions-border {
+  width: 100%;
+  margin-top: 285px;
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+}
+
+.admissions-title {
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-top: 30px;
+  font-size: 3.1rem;
+  letter-spacing: 0.1em;
+}
+
+.admissions-container {
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: calc(2.44898vw + 20.81633px);
+}
+
+.admissions-img img {
+  width: 33.5rem;
+  height: 39rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.admissions-link, .admissions-head {
+  width: 100%;
+}
+
+.admissions-head a ul li {
+  display: flex;
+  position: relative;
+  padding: 28px 0;
+  border-top: 1px solid gray;
+}
+
+.admissions-head a ul li:nth-child(4) {
+  border-bottom: 1px solid gray;
+}
+
+.admissions-head a ul li p {
+  margin-left: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.admissions-head a ul li img {
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  transform: translateY(-50%);
+}
+
+.admissions-buttom-area {
+  display: block;
+  width: 309px;
+  height: 58px;
+}
+
+.admissions-buttom {
+  margin-top: 55px;
+  width: 309px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-weight: 600;
+}
+
+.admissions-buttom img {
+  width: 20px;
+}
+
+.admissions-buttom::before {
+  content: '';
+  width: 10px;
+  height: 100%;
+  border: 1px solid black;
+  border-right: 1px solid white;
+  position: absolute;
+  left: 0;
+}
+
+.admissions-buttom::after {
+  content: '';
+  width: 10px;
+  height: 100%;
+  border: 1px solid black;
+  border-left: 1px solid white;
+  position: absolute;
+  right: 0;
+}
+
+/* /admissions */
