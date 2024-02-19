@@ -671,7 +671,8 @@ a {
 }
 
 .course-contents {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
   flex-wrap: wrap;
   position: relative;
   bottom: 70px;
@@ -686,7 +687,7 @@ a {
 
 .content2-head {
   position: relative;
-  width: 254px;
+  /* width: 254px; */
 }
 
 .content2-head p {
@@ -1039,7 +1040,7 @@ a {
 
 .campus-life-border {
   width: 100%;
-  margin-top: 285px;
+  margin-top: 50px;
   font-size: 0.8em;
   display: flex;
   align-items: center;
@@ -1148,7 +1149,7 @@ a {
 
 .admissions-border {
   width: 100%;
-  margin-top: 285px;
+  margin-top: 150px;
   font-size: 0.8em;
   display: flex;
   align-items: center;
@@ -1247,3 +1248,294 @@ a {
 }
 
 /* /admissions */
+
+/* instagram */
+
+.instagram {
+  margin: 0 30px;
+  padding: 0 40px;
+}
+
+.instagram-title {
+  margin-top: 140px;
+  display: flex;
+  align-items: center;
+}
+
+.instagram-title h3 {
+  font-size: 1.7rem;
+}
+
+.instagram-title p {
+  color: gray;
+  font-size: 1em;
+  margin-left: 1.5em;
+}
+
+.instagram-contents {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap: 12px;
+  margin-bottom: 70px;
+}
+
+.instagram-content a img {
+  width: 11rem;
+  height: 11rem;
+  object-fit: cover;
+}
+
+/* /instagram */
+
+/* line-account */
+
+.line-account {
+  margin: 0 30px;
+  padding: 0 40px;
+  display: flex;
+}
+
+.line-container {
+  width: 100%;
+}
+
+.line-account-bg {
+  width: 100%;
+  display: flex;
+  background-color: gray;
+  padding: 45px 50px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.line-account-main {
+  display: flex;
+  align-items: center;
+}
+
+.line-account-main img {
+  width: 5.5rem;
+}
+
+.line-account-text {
+  margin-left: 10px;
+}
+
+.line-account-text h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.line-account-icon {
+  position: absolute;
+  top: 50%;
+  right: 3rem;
+  transform: translateY(-50%);
+}
+
+.line-account-icon img {
+  width: 2.5rem;
+}
+
+/* /line-account */
+
+/* official-sns */
+
+.official-sns {
+  margin: 80px 30px 0 30px;
+  padding: 0 40px;
+  display: flex;
+}
+
+.sns-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: calc(2.44898vw + 20.81633px);
+}
+
+.sns-icon {
+  display: flex;
+  gap: 10px;
+}
+
+.sns-bg {
+  background-color: gray;
+  border-radius: 50%;
+  width: 5.5rem;
+  height: 5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sns-bg a img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  transform: translateY(10%);
+}
+
+/* /official-sns */
+
+/* cta */
+
+.cta {
+  margin: 200px 30px 0 30px;
+  padding: 0 40px;
+  display: flex;
+}
+
+.cta-container {
+  width: 100%;
+  display: flex;
+  gap: calc(1.63265vw + 13.87755px);
+  justify-content: center;
+}
+
+.cta1, .cta2 {
+  width: 39.5rem;
+  height: 23.5rem;
+  border-radius: 15px;
+  position: relative;
+}
+
+.cta1 {
+  background-color: blue;
+}
+
+.cta2 {
+  background-color: purple;
+}
+
+.cta1 a, .cta2 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.cta-p {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  color: white;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.cta-text1, .cta-text2 {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.cta-text1 h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.cta-text1 p {
+  margin-top: 5px;
+  font-size: 0.9em;
+  font-weight: 500;
+  line-height: 180%;
+}
+
+.cta-text2 h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.cta-text2 p {
+  margin-top: 5px;
+  font-size: 0.9em;
+  font-weight: 500;
+  line-height: 180%;
+}
+
+.cta1 img, .cta2 img {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  width: 3.8rem;
+  height: 3.8rem;
+}
+
+.cta1 figure img {
+  position: absolute;
+  width: 9.3rem;
+  height: 7.5rem;
+  object-fit: cover;
+  right: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* /cta */
+
+/* slider */
+
+.slider-sec {
+  margin-top: 120px;
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-img {
+  display: flex;
+  width: 100vw;
+}
+
+.slider-img:first-child {
+  animation: loop 50s -25s linear infinite;
+}
+
+.slider-img:last-child {
+  animation: loop2 50s linear infinite;
+}
+
+@keyframes loop {
+  0% {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+@keyframes loop2 {
+  0% {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-200%);
+  }
+}
+
+.slider-img img {
+  min-width: 100vw;
+  height: 100px;
+  object-fit: cover;
+}
+
+.slider-img+.slider-img {
+  margin-top: 30px;
+}
+
+/* .-reverse .slider-img {
+  animation-direction: reverse;
+} */
+
+/* /slider */
+
