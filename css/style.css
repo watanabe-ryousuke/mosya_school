@@ -129,25 +129,27 @@ a {
 
 .hamburger.hum-hover:hover {
 
-  .bar-span {
+  .bar-span::before {
     width: 20px;
   }
+  
   .bar-span::after {
     width: 10px;
   }
 }
 
-.hamburger.active .bar-span {
+.hamburger.active .bar-span::before {
+  top: 3px;
   border-bottom: 2px solid white;
 }
-.hamburger.active .bar-span::before {
+.hamburger.active .bar-span {
   bottom: 0;
   transform: rotate(-50deg);
 }
 
 .hamburger.active .bar-span::after {
-  top: -1px;
-  transform: rotate(50deg);
+  top: 0;
+  transform: rotate(100deg);
 }
 
 .hamburger p {
@@ -158,7 +160,8 @@ a {
 }
 
 .bar {
-  width: 100%;
+  width: 30px;
+  margin: 0 auto;
 }
 
 .bar-span,
@@ -167,24 +170,24 @@ a {
   content: '';
   display: block;
   border-bottom: 2px solid red;
-  width: 30px;
+  width: 100%;
   height: 2px;
-  margin: 0 auto;
   transition: all 0.5s ease;
 }
 
 .bar-span {
   position: relative;
+  bottom: 7px;
 }
 
 .bar-span::before {
   position: absolute;
-  bottom: 7px;
+  top: 9px;
 }
 
 .bar-span::after {
   position: absolute;
-  top: 9px;
+  top: 18px;
 }
 
 .menu-off {
@@ -1843,11 +1846,5 @@ a {
   50%{ transform: rotate(180deg); }
   100% { transform: rotate(360deg); }
 }
-
-/* .text span {
-  position: absolute;
-  inset: 0;
-  font-weight: 700;
-} */
 
 /* /circle animation */
