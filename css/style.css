@@ -198,10 +198,32 @@ a {
   transition: all 1s ease;
   opacity: 0;
   transition: opacity .3s linear;
+  visibility: hidden;
 }
 
 .menu-off.active {
   opacity: 1;
+  visibility: visible;
+}
+
+.menu {
+  display: flex;
+}
+
+/* .menu-copy {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  color: white;
+} */
+
+.menu-copy h1 {
+  font-size: 4.5rem;
+}
+
+.menu-copy p {
+  font-size: 1.2em;
+  font-weight: 500;
 }
 
 /* /header */
