@@ -1,5 +1,5 @@
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .container {
@@ -69,8 +69,8 @@ a {
 }
 
 .header-buttom1 a {
-  width: 90px;
-  height: 90px;
+  width: 100%;
+  height: 100%;
   color: #fff;
   text-decoration: none;
   flex-direction: column;
@@ -83,6 +83,10 @@ a {
   margin-bottom: 5px;
   position: relative;
   bottom: 3px;
+}
+
+.header-buttom1 span {
+  display: inline-block;
 }
 
 .header-buttom2 {
@@ -100,8 +104,8 @@ a {
 }
 
 .header-buttom2 a {
-  width: 90px;
-  height: 90px;
+  width: 100%;
+  height: 100%;
   color: #fff;
   text-decoration: none;
   flex-direction: column;
@@ -127,15 +131,19 @@ a {
   background-color: white;
 }
 
-.hamburger.hum-hover:hover {
+@media screen and (min-width: 769px) {
 
-  .bar-span::before {
-    width: 20px;
+  .hamburger.hum-hover:hover {
+
+    .bar-span::before {
+      width: 20px;
+    }
+    
+    .bar-span::after {
+      width: 10px;
+    }
   }
   
-  .bar-span::after {
-    width: 10px;
-  }
 }
 
 .hamburger.active .bar-span::before {
@@ -169,7 +177,7 @@ a {
 .bar-span::after {
   content: '';
   display: block;
-  border-bottom: 2px solid red;
+  border-bottom: 1px solid red;
   width: 100%;
   height: 2px;
   transition: all 0.5s ease;
@@ -183,6 +191,7 @@ a {
 .bar-span::before {
   position: absolute;
   top: 9px;
+  border-bottom: 2px solid red;
 }
 
 .bar-span::after {
@@ -195,9 +204,8 @@ a {
   background-color: white;
   z-index: 1000;
   width: 100vw;
-  transition: all 1s ease;
+  transition: .3s ease;
   opacity: 0;
-  transition: opacity .3s linear;
   visibility: hidden;
 }
 
@@ -233,15 +241,21 @@ a {
 .mv-container {
   position: relative;
   display: flex;
-  height: 100vh;
+  /* height: calc(35.10204vw + 298.36735px); */
   margin-bottom: 5.5rem;
 }
 
-.mv-container img {
-  padding: 20px;
-  width: 100vw;
-  border-radius: 30px;
-  object-fit: cover;
+@media screen and (min-width: 769px) {
+
+  .mv-container img {
+    padding: 20px;
+    width: 100%;
+    height: 510px;
+    min-height: 296px;
+    border-radius: 30px;
+    object-fit: cover;
+  }
+
 }
 
 .copy {
@@ -1870,3 +1884,102 @@ a {
 }
 
 /* /circle animation */
+
+
+@media screen and (max-width: 768px) {
+
+  /* header */
+
+  .header-logo {
+    display: flex;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+  }
+
+  .header-buttom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 50px;
+  }
+
+  .header-buttom1, .header-buttom2 {
+    padding: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+  }
+
+  .header-buttom1 a, .header-buttom2 a {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-buttom1 a p, .header-buttom2 a p {
+    margin-left: 3px;
+    position: relative;
+    top: 3px;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+  }
+
+  .hamburger {
+    width: 60px;
+    height: 60px;
+    border-radius: 0 0 0 10px;
+  }
+  
+  .hamburger p {
+    position: relative;
+    font-size: 0.75rem;
+    top: 10px;
+    font-weight: bold;
+  }
+  
+  .bar {
+    width: 20px;
+    margin: 0 auto;
+  }
+  
+  .bar-span {
+    position: relative;
+    bottom: 7px;
+  }
+  
+  .bar-span::before {
+    position: absolute;
+    top: 7px;
+  }
+  
+  .bar-span::after {
+    position: absolute;
+    top: 13px;
+  }
+
+  /* /header */
+
+  /* mv */
+
+  .mv {
+    margin-top: 60px;
+    padding: 10px;
+  }
+
+  .mv-container img {
+    width: 100%;
+    height: 100%;
+    max-height: 548px;
+    min-height: 296px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  /* /mv */
+
+}
