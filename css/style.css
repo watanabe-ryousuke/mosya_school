@@ -131,7 +131,7 @@ a {
   background-color: white;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
 
   .hamburger.hum-hover:hover {
 
@@ -245,7 +245,7 @@ a {
   margin-bottom: 5.5rem;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
 
   .mv-container img {
     padding: 20px;
@@ -1886,7 +1886,7 @@ a {
 /* /circle animation */
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
   /* header */
 
