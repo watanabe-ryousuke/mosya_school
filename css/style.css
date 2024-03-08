@@ -52,6 +52,14 @@ a {
 
 .header-buttom {
   display: flex;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s ease;
+}
+
+.header-buttom.active {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .header-buttom1 {
@@ -1801,6 +1809,10 @@ a {
   margin-right: 15px;
 }
 
+.footer-sns li:last-child {
+  display: none;
+}
+
 .footer-sns li {
   padding: 0 21px;
 }
@@ -1853,19 +1865,21 @@ a {
   z-index: -100;
 }
 
-.circle1 {
-  top: 45%;
-  right: 40%;
-}
+@media screen and (min-width: 768px) {
+  .circle1 {
+    top: 45%;
+    right: 40%;
+  }
 
-.circle2 {
-  top: 60%;
-  left: 12%;
-}
+  .circle2 {
+    top: 60%;
+    left: 12%;
+  }
 
-.circle3 {
-  bottom: 0;
-  left: 20%;
+  .circle3 {
+    bottom: 0;
+    left: 20%;
+  }
 }
 
 .text1, .text2, .text3 {
@@ -2055,10 +2069,6 @@ a {
     margin-left: 15px;
   }
 
-  .pickup-content img {
-    /* width: 100%; */
-  }
-
   .pickup-content p {
     font-size: 0.8em;
   }
@@ -2095,6 +2105,7 @@ a {
 
   .features-heads {
     width: 100%;
+    max-width: 676px;
   }
 
   .features-heads img {
@@ -2492,6 +2503,7 @@ a {
 
   .campus-life-img img {
     width: 100%;
+    aspect-ratio: 67 / 78;
   }
 
   .campus-life-link {
@@ -2568,6 +2580,7 @@ a {
 
   .admissions-img img {
     width: 100%;
+    aspect-ratio: 67 / 78;
   }
 
   .admissions-head a ul li {
@@ -2839,7 +2852,85 @@ a {
     display: none;
   }
 
+  .footer-certification {
+    margin-top: 30px;
+  }
+
+  .footer-certification p {
+    margin-top: 0;
+    margin-left: 1em;
+    font-size: 0.5em;
+    letter-spacing: 0.1em;
+  }
+
+  .footer-mid {
+    margin-top: 35px;
+    justify-content: center;
+  }
+
+  .footer-sns {
+    margin-right: 0;
+  }
+
+  .footer-sns li {
+    padding: 0 15px;
+  }
+
+  .footer-sns li:last-child {
+    display: block;
+  }
+
+  .footer-sns li a img {
+    width: 1.5em;
+  }
+
+  .footer-bottom {
+    padding: 20px 0 35px 0;
+  }
+
+  .footer-copyright {
+    margin: 0 auto;
+    font-size: 0.5em;
+  }
+
   /* /footer */
+
+  /* circle animation */
+
+  .circle1 {
+    top: 40%;
+    right: -60%;
+  }
+
+  .inner1 {
+    font-size: 50px;
+    width: 600px;
+    height: 600px;
+  }
+
+  .circle2 {
+    left: 0;
+    bottom: -5%;
+  }
+
+  .inner2 {
+    font-size: 2em;
+    width: 390px;
+    height: 390px;
+  }
+
+  .circle3 {
+    left: -50%;
+    top: 10%;
+  }
+
+  .inner3 {
+    font-size: 45px;
+    width: 600px;
+    height: 600px;
+  }
+
+  /* /circle animation */
 
 }
 
