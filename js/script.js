@@ -143,8 +143,10 @@ function ToArch3(element){
 var archtarget3 = document.getElementById('text3');
 ToArch3(archtarget3);
 
+
 $(".hamburger").click(function () {
   $(this).toggleClass('active');
   $(this).toggleClass('hum-hover');
   $('.menu-off').toggleClass('active');
+  $('.header-buttom').toggleClass('active');
 });
