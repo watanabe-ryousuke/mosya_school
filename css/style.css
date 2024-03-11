@@ -550,13 +550,13 @@ a {
   letter-spacing: 0.15em;
 }
 
-.features-contents {
+.container .features-contents {
   margin-top: 50px;
   display: flex;
   position: relative;
 }
 
-.features-content {
+.swiper-wrapper .features-content {
   margin-right: 40px;
 }
 
@@ -1107,11 +1107,11 @@ a {
   border-radius: 5px;
 }
 
-.open-campus-contents {
+.open-campus-container .open-campus-contents {
   display: flex;
 }
 
-.open-campus-content {
+.swiper-wrapper .open-campus-content {
   margin: 5px 15px;
 }
 
