@@ -1,31 +1,3 @@
-// const before = $('.text');
-// const text = before.text();
-// const textArray = text.split('');
-
-// let after = '';
-// $.each(textArray,function(index,val){
-//   after += "<span>" + val + "</span>";
-// });  
-
-// before.html(after);
-
-// const textcnt = textArray.length;
-// const circleR = ($('.circle').height()) / 2;
-// const fontH = ($('.inner').height());
-// const dist = circleR - fontH;
-
-// $('span').each(function(index) {
-//   const num = index + 1;
-//   const radX = Math.sin(360 / textcnt * num * (Math.PI / 180));
-//   const radY = Math.sin((90 - (360 / textcnt * num)) * (Math.PI / 180));
-//   $(this).css('transform', 'translate(' + dist * radX + 'px, ' + -(dist * radY) + 'px) rotate(' + 360 / textcnt * num + 'deg)');
-// });
-
-// $(function () {
-//   $('#text1').arctext();
-//   $('#text2').arctext({radius: 100, dir: -1});
-// });
-
 function ToArch1(element){
 
 
@@ -57,7 +29,6 @@ function ToArch1(element){
     divnode.style.left = '49.5%';
     divnode.style.transform = 'rotate(' + divrotate + 'deg)';
     element.appendChild(divnode);
-    console.log(divnode);
   }
   return element;
 }
@@ -96,7 +67,6 @@ function ToArch2(element){
     divnode.style.left = '49.5%';
     divnode.style.transform = 'rotate(' + divrotate + 'deg)';
     element.appendChild(divnode);
-    console.log(divnode);
   }
   return element;
 }
@@ -135,7 +105,6 @@ function ToArch3(element){
     divnode.style.left = '49.5%';
     divnode.style.transform = 'rotate(' + divrotate + 'deg)';
     element.appendChild(divnode);
-    console.log(divnode);
   }
   return element;
 }
@@ -149,4 +118,9 @@ $(".hamburger").click(function () {
   $(this).toggleClass('hum-hover');
   $('.menu-off').toggleClass('active');
   $('.header-buttom').toggleClass('active');
+});
+
+
+const swiper = new Swiper(".swiper", {
+  loop: true,
 });
