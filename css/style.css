@@ -466,7 +466,6 @@ a {
   left: 0;
   bottom: 0;
   width: 100vw;
-  z-index: -1;
   border-radius: 10px 0 0 10px;
 }
 
