@@ -121,6 +121,32 @@ $(".hamburger").click(function () {
 });
 
 
-const swiper = new Swiper(".swiper", {
-  loop: true,
-});
+const swiperSlides = document.getElementsByClassName('swiper-slide');
+const breakPoint = 767;
+let mySwiper ;
+let mySwiperBool ;
+
+window.addEventListener('load',()=>{
+  if( breakPoint < window.innerWidth){
+    createSwiper();
+    mySwiperBool = true;
+  }else{
+    mySwiperBool = false;
+  }
+},false);
+
+window.addEventListener('resize',()=>{
+  if( breakPoint >= window.innerWidth && !(mySwiperBool)){
+    mySwiper.destroy(false,true);
+    mySwiperBool = false;
+  }else if( breakPoint < window.innerWidth && mySwiperBool){
+    createSwiper();
+    mySwiperBool = true;
+  }
+},false);
+
+const createSwiper = () =>{
+  mySwiper = new Swiper(".swiper", {
+    loop: true,
+  });
+}
