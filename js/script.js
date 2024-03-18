@@ -119,9 +119,42 @@ $(".hamburger").click(function () {
   $('.menu-off').toggleClass('active');
   $('.header-buttom').toggleClass('active');
 });
+console.log(document.getElementsByClassName('open-campus-contents swiper'));
+
+
+$(function(){
+	$(window).scroll(function (){
+
+		$('.js-fade').each(function(){
+      var pos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+
+			if (scroll > pos - windowHeight + 100){
+				$(this).addClass('scroll');
+			}
+		});
+
+    var delayTime = 100;
+
+    $('.fadein').each(function(){
+      var pos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      
+			if (scroll > pos - windowHeight + 100){
+        $(this).delay(delayTime).queue(function(){
+            $(this).addClass('active');
+        })
+        delayTime = delayTime + 100;
+      }
+    })
+	});
+});
+
 
 if (document.getElementsByClassName('open-campus-contents swiper') == true) {
-
+  
   // Swiperの初期化
   const mySwiper = new Swiper('.swiper', {
     // 通常のオプション設定
@@ -137,9 +170,12 @@ if (document.getElementsByClassName('open-campus-contents swiper') == true) {
       },
     },
   });
-}else {
+};
+
+if (document.getElementsByClassName('open-campus-contents swiper') == false) {
+  
   const mySwiper = new Swiper('.swiper', {
     // 通常のオプション設定
     loop: true,
   });
-}
+};
