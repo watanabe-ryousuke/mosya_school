@@ -135,7 +135,7 @@ $(function(){
 			}
 		});
 
-    var delayTime = 100;
+    var delayTime = 0;
 
     $('.fadein').each(function(){
       var pos = $(this).offset().top;
@@ -153,29 +153,23 @@ $(function(){
 });
 
 
-if (document.getElementsByClassName('open-campus-contents swiper') == true) {
-  
-  // Swiperの初期化
-  const mySwiper = new Swiper('.swiper', {
-    // 通常のオプション設定
-    loop: true,
-    slidesPerView: 1, // 1スライドに設定してスライダーを無効にする
-    allowTouchMove: false, // タッチ操作を無効にする
-    // ブレークポイントごとの設定
-    breakpoints: {
-      // 768px以上の場合
-      768: {
-        slidesPerView: 'auto', // 常にスライドが見えるようにする
-        allowTouchMove: true, // タッチ操作を有効にする
+    // Swiperの初期化
+    const mySwiper1 = new Swiper('.swiper2', {
+      // 通常のオプション設定
+      loop: true,
+      slidesPerView: 1, // 1スライドに設定してスライダーを無効にする
+      allowTouchMove: false, // タッチ操作を無効にする
+      // ブレークポイントごとの設定
+      breakpoints: {
+        // 768px以上の場合
+        768: {
+          slidesPerView: 'auto', // 常にスライドが見えるようにする
+          allowTouchMove: true, // タッチ操作を有効にする
+        },
       },
-    },
-  });
-};
+    });
 
-if (document.getElementsByClassName('open-campus-contents swiper') == false) {
-  
-  const mySwiper = new Swiper('.swiper', {
+  const mySwiper2 = new Swiper('.swiper1', {
     // 通常のオプション設定
     loop: true,
   });
-};
