@@ -28,26 +28,27 @@ a {
   opacity: 0;
   visibility: hidden;
   transform: translateY(50px);
-  transition: opacity 1s,visibility 1s, transform 1s;
 }
 
 .scroll {
   opacity: 1;
   visibility: visible;
   transform: translateY(0px);
+  transition: 1s;
 }
 
 .fadein {
+  display: inline-block;
   opacity: 0;
   visibility: hidden;
   transform: translateY(50px);
-  transition: opacity .5s,visibility .5s, transform .5s;
 }
   
 .fadein.active{
   opacity: 1;
   visibility: visible;
   transform: translateY(0px);
+  transition: .5s;
 }
 
 /* header */
@@ -512,7 +513,7 @@ a {
 }
 
 .swiper-wrapper .pickup-content {
-  /* width: 10rem; */
+  /* width: 28rem; */
   margin-right: 20px;
   flex-shrink: 1;
 }
