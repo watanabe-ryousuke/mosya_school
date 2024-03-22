@@ -513,7 +513,7 @@ a {
 }
 
 .swiper-wrapper .pickup-content {
-  /* width: 28rem; */
+  /* width: 28rem!important; */
   margin-right: 20px;
   flex-shrink: 1;
 }
@@ -941,7 +941,7 @@ a:hover .content2-head img {
   height: 338px;
   object-fit: cover;
   border-radius: 10px;
-  /* transform: scale(1.05) rotate(-2deg); */
+  transform: scale(1.05) rotate(-2deg);
   transition: all 0.3s ease;
 }
 
