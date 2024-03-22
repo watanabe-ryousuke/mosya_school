@@ -119,7 +119,6 @@ $(".hamburger").click(function () {
   $('.menu-off').toggleClass('active');
   $('.header-buttom').toggleClass('active');
 });
-console.log(document.getElementsByClassName('open-campus-contents swiper'));
 
 
 $(function(){
@@ -152,24 +151,24 @@ $(function(){
 	});
 });
 
+const mySwiper1 = new Swiper('#swiper1', {
+  // 通常のオプション設定
+  loop: true,
+});
 
-    // Swiperの初期化
-    const mySwiper1 = new Swiper('.swiper2', {
-      // 通常のオプション設定
-      loop: true,
-      slidesPerView: 1, // 1スライドに設定してスライダーを無効にする
-      allowTouchMove: false, // タッチ操作を無効にする
-      // ブレークポイントごとの設定
-      breakpoints: {
-        // 768px以上の場合
-        768: {
-          slidesPerView: 'auto', // 常にスライドが見えるようにする
-          allowTouchMove: true, // タッチ操作を有効にする
-        },
-      },
-    });
-
-  const mySwiper2 = new Swiper('.swiper1', {
-    // 通常のオプション設定
-    loop: true,
-  });
+// Swiperの初期化
+const mySwiper2 = new Swiper('#swiper2', {
+  // 通常のオプション設定
+  loop: true,
+  
+  slidesPerView: 1, // 1スライドに設定してスライダーを無効にする
+  allowTouchMove: false, // タッチ操作を無効にする
+  // ブレークポイントごとの設定
+  breakpoints: {
+    // 768px以上の場合
+    768: {
+      slidesPerView: 'auto', // 常にスライドが見えるようにする
+      allowTouchMove: true, // タッチ操作を有効にする
+    },
+  },
+});
